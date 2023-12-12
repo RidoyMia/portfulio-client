@@ -5,6 +5,7 @@ import banner from "../../../src/assets/banner.png"
 import logo from "../../../src/assets/log.jpg"
 import { MdFileDownload } from "react-icons/md";
 import { Link, useNavigate } from 'react-router-dom';
+import pdf from "../../assets/Ridoy-Mia (1).pdf"
 const Home = () => {
     const [project,setProject] = useState([])
     const homeref = useRef(null);
@@ -83,7 +84,17 @@ const Home = () => {
               <h1 className='lg:text-xl md:text-md  font-semibold  pt-7'>MERN STACK DEVELOPER</h1>
               <p className='lg:pe-30 pt-5  line-clamp-6'>I am MERN stack developer focused on crafting clean & user friendly experiences, I am passionate about building excellent software that improve the lives of those around me</p>
               <div className='flex lg:justify-start md:justify-start justify-center items-center'>
-                <button className=' flex  justify-center items-center align-middle gap-x-3 bg-yellow-500 text-white py-2 px-5 my-5 rounded-lg'><h1>Download resume </h1><MdFileDownload></MdFileDownload></button>
+              <a
+  href="https://drive.google.com/file/d/1JB9Di1C2t04NGHb-TJ2-Ea18qshGpqOd/view?usp=sharing"
+  download="your_resume_filename.pdf"
+>
+  <button className="flex justify-center items-center align-middle gap-x-3 bg-yellow-500 text-white py-2 px-5 my-5 rounded-lg">
+    <h1>Download resume </h1>
+    <MdFileDownload />
+  </button>
+</a>
+
+
               </div>
             </div>
           </div>
@@ -193,6 +204,7 @@ const Home = () => {
                   <p className='py-2'>Address: Madhabpur,Habiganj</p>
                   <p className='py-2'>Phone: +8801314791920</p>
                   <p className='py-2'>Email: Ridoymia1531@gmail.com</p>
+                  <p className='py-2'>Email: <a className='text-blue-400' href='https://www.linkedin.com/in/ridoy-miya-7903652a0/'>Linkedin</a></p>
                   <p className='py-2'>Language: Bangali</p>
               
                </div>
